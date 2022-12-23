@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mesto</title>
+  <link rel="stylesheet" href="./pages/index.css">
+</head>
+<body class="page">
+
+  <header class="header page__header">
+    <div class="logo header__logo"></div>
+  </header>
+
+  <main class="content">
+    <section class="info page__info">
+      <div class="info__profile">
+        <img src="./images/avatar.png" alt="аватарка профиля" class="info__profile-avatar">
+        <div class="info__profile-descr">
+          <h1 class="info__profile-name">Жак-Ив Кусто</h1>
+          <button type="button" aria-label="Редактировать" class="info__edit-button"></button>
+        </div>
+        <p class="info__profile-post">Исследователь океана</p>
+      </div>
+      <button type="button" aria-label="Закрыть" class="info__add-button"></button>
+    </section>
+
+    <section class="elements page__elements">
+      <div class="elements__grid-container">
+
+        <template id="card-place">
+          <figure class="card-place">
+            <img src="#" class="card-place__img" alt="#">
+            <button type="button" aria-label="Удалить" class="card-place__delete"></button>
+            <figcaption class="card-place__descr">
+              <h2 class="card-place__name"></h2>
+              <button type="button" aria-label="Нравиться" class="card-place__like"></button>
+            </figcaption>
+          </figure>
+        </template>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer page__footer">
+    <p class="footer__descr">&copy; 2022 Mesto Russia</p>
+  </footer>
+
+  <section class="popup popup_edit_form">
+    <div class="popup__container">
+      <form name="editForm" class="popup__form popup__form_edit" novalidate>
+        <h2 class="popup__title-form">Редактировать профиль</h2>
+
+        <input required id="name-profile-input" name="name" type="text" class="popup__input popup__input_field_name" placeholder="Имя" value="Жак-Ив Кусто" minlength="2" maxlength="40">
+        <span class="popup__input-error name-profile-input-error"></span>
+        <input required id="post-input" name="post" type="text" class="popup__input popup__input_field_post" placeholder="О себе" value="Исследователь океана" minlength="2" maxlength="200">
+        <span class="popup__input-error post-input-error"></span>
+
+        <button type="submit" class="popup__button-form">Сохранить</button>
+      </form>
+      <button type="button" aria-label="Закрыть" class="popup__close"></button>
+    </div>
+  </section>
+
+  <section class="popup popup_add_form">
+    <div class="popup__container">
+      <form name="addForm" class="popup__form popup__form_add" novalidate>
+        <h2 class="popup__title-form">Новое место</h2>
+        <input required id="name-place-input" name="name-place" type="text" class="popup__input popup__input_field_place-name" placeholder="Название" minlength="2" maxlength="30">
+        <span class="popup__input-error name-place-input-error"></span>
+        <input required id="link-place-input" name="link" type="url" class="popup__input popup__input_field_place-link" placeholder="Ссылка на картинку">
+        <span class="popup__input-error link-place-input-error"></span>
+        <button type="submit" class="popup__button-form">Создать</button>
+      </form>
+      <button type="button" aria-label="Закрыть" class="popup__close"></button>
+    </div>
+  </section>
+
+  <section class="popup popup_image">
+    <div class="popup__container-image">
+      <figure class="popup__place">
+        <img src="#" class="popup__place-image" alt="#">
+        <figcaption class="popup__place-descr"></figcaption>
+      </figure>
+      <button type="button" aria-label="Закрыть" class="popup__close"></button>
+    </div>
+  </section>
+
+  <script defer src="./scripts/validate.js"></script>
+  <script defer src="./scripts/cards.js"></script>
+  <script defer src="./scripts/index.js"></script>
+</body>
+</html>
