@@ -1,6 +1,6 @@
 # Проект: Место ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ------
-## Проект построен на функциональном стили программирования
+## Проект построен на функциональном стиле программирования
 ## Превью:
 ![Видео без названия — сделано в Clipchamp (2) (2)](https://user-images.githubusercontent.com/102176847/215270442-87909be3-6282-4b7c-826a-70a12cda5322.gif)
 ## Описание: данный проект решает такие проблемы современности как:
