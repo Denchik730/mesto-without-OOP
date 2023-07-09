@@ -44,6 +44,4 @@
 * [Проектная работа №5 (чеклист)](https://code.s3.yandex.net/web-developer/checklists-pdf/new-program/checklist-5.pdf) 
 * [Проектная работа №6 (чеклист)](https://code.s3.yandex.net/web-developer/checklists-pdf/new-program/checklist-6.pdf) 
 
-## Планы доработки:
-* Проверить код на кроссбраузерность и дописать все вендорные префиксы;
 
