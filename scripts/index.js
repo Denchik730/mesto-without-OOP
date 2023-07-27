@@ -57,7 +57,7 @@ function closePopup(popup) {
 
 function closePopupByOverlay(popup) {
 
-  popup.addEventListener('click', (e) => {
+  popup.addEventListener('mousedown', (e) => {
 
     if (e.currentTarget == e.target) {
 
